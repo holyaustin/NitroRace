@@ -1,4 +1,4 @@
-# 🏎️ NitroRace – Blockchain-Powered Racing & Betting dApp
+# 🏎️ NitroRace – Blockchain-Powered Racing 
 
 > **Race. Bet. Win. On-chain.**
 
