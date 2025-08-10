@@ -1,6 +1,8 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomicfoundation/hardhat-verify";
+import '@nomicfoundation/hardhat-ethers';
+import "@nomicfoundation/hardhat-chai-matchers";
 import "hardhat-gas-reporter";
 import dotenv from "dotenv";
 dotenv.config();
@@ -18,7 +20,7 @@ const config: HardhatUserConfig = {
   },
   networks: {
     somnia: {
-      url: "https://somnia-testnet-rpc.dora.so",
+      url: "https://dream-rpc.somnia.network/",
       accounts: [process.env.PRIVATE_KEY!],
     },
     localhost: {
@@ -39,11 +41,6 @@ const config: HardhatUserConfig = {
         },
       },
     ],
-  },
-  gasReporter: {
-    enabled: true,
-    currency: "USD",
-    gasPrice: 21,
   },
 };
 

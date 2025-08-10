@@ -227,20 +227,7 @@ Built during [Hackathon Name] 2024
 🔥 **NitroRace: Where every race settles on-chain. No takebacks.**
 
 
+✅ CarNFT deployed to: 0x084622e6970BBcBA510454C6145313c2993ED9E4
 
-npm install --save-dev \
-  @nomicfoundation/hardhat-toolbox \
-  @nomicfoundation/hardhat-chai-matchers \
-  @nomiclabs/hardhat-ethers \
-  @nomiclabs/hardhat-waffle \
-  ethers \
-  chai \
-  hardhat-gas-reporter \
-  solhint \
-  prettier \
-  prettier-plugin-solidity \
-  @typescript-eslint/eslint-plugin \
-  @typescript-eslint/parser \
-  eslint \
-  eslint-config-prettier \
-  eslint-plugin-prettier --legacy-peer-deps
+✅ RaceManager deployed to: 0xA2Aea35523a71EFf81283E32F52151F12D5CBB7F
+

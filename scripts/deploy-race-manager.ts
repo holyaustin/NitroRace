@@ -1,7 +1,8 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  const carNFTAddress = "REPLACE_WITH_CARNFT_ADDRESS"; // From deploy-car-nft output
+  // Replace with actual CarNFT address after deploying it
+  const carNFTAddress = "0x084622e6970BBcBA510454C6145313c2993ED9E4"; // ← Change this!
 
   const RaceManager = await ethers.getContractFactory("RaceManager");
   const raceManager = await RaceManager.deploy(carNFTAddress);
