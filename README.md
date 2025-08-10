@@ -228,3 +228,19 @@ Built during [Hackathon Name] 2024
 
 
 
+npm install --save-dev \
+  @nomicfoundation/hardhat-toolbox \
+  @nomicfoundation/hardhat-chai-matchers \
+  @nomiclabs/hardhat-ethers \
+  @nomiclabs/hardhat-waffle \
+  ethers \
+  chai \
+  hardhat-gas-reporter \
+  solhint \
+  prettier \
+  prettier-plugin-solidity \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint \
+  eslint-config-prettier \
+  eslint-plugin-prettier --legacy-peer-deps
