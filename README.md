@@ -1,10 +1,3 @@
-🎉 Perfect! I'm going with **`NitroRace`** as the official name.
-
-Here’s a **comprehensive, professional, and demo-ready `README.md`** for your **NitroRace** blockchain racing dApp — ideal for a hackathon submission, GitHub repo, and live presentation.
-
----
-
-```markdown
 # 🏎️ NitroRace – Blockchain-Powered Racing & Betting dApp
 
 > **Race. Bet. Win. On-chain.**
@@ -232,7 +225,6 @@ Built during [Hackathon Name] 2024
 ---
 
 🔥 **NitroRace: Where every race settles on-chain. No takebacks.**
-```
 
----
+
 
