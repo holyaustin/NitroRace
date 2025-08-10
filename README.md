@@ -231,3 +231,7 @@ Built during [Hackathon Name] 2024
 
 ✅ RaceManager deployed to: 0xA2Aea35523a71EFf81283E32F52151F12D5CBB7F
 
+mkdir -p public/abi
+cp ../NiroRace/artifacts/contracts/CarNFT.sol/CarNFT.json public/abi/CarNFT.json
+cp ../NiroRace/artifacts/contracts/RaceManager.sol/RaceManager.json public/abi/RaceManager.json
+
