@@ -3,7 +3,7 @@
 
 import { useWriteContract } from 'wagmi';
 import { RACE_MANAGER_ADDRESS } from '@/lib/addresses';
-import RaceManagerABI from '../public/abi/RaceManager.json';
+import RaceManagerABI from '../lib/abi/RaceManager';
 
 export function JoinRace() {
   const { writeContract, isPending } = useWriteContract();
@@ -14,7 +14,7 @@ export function JoinRace() {
       abi: RaceManagerABI,
       functionName: 'joinRace',
       args: [0], // raceId
-      value: BigInt('10000000000000000'), // 0.01 ETH
+      value: BigInt('100000000000000'), // 0.01 ETH
     });
   };
 

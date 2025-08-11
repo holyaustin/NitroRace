@@ -3,15 +3,19 @@
 
 import { useState } from 'react';
 import { useWriteContract } from 'wagmi';
+import { RACE_MANAGER_ADDRESS } from '@/lib/addresses';
+import raceManagerABI from '@/lib/abi/RaceManager';
 
 export function DeclareWinner() {
   const [winner, setWinner] = useState('');
   const { writeContract, isPending } = useWriteContract();
 
   const handleSubmit = () => {
+    if (!winner.startsWith('0x') || winner.length !== 42) return;
+
     writeContract({
       address: RACE_MANAGER_ADDRESS,
-      abi: RaceManagerABI,
+      abi: raceManagerABI,
       functionName: 'declareWinner',
       args: [0, winner as `0x${string}`],
     });

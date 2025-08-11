@@ -3,25 +3,25 @@
 
 import { useAccount, useReadContract } from 'wagmi';
 import { CAR_NFT_ADDRESS } from '@/lib/addresses';
-import CarNFTABI from '../public/abi/CarNFT.json';
+import carNFTABI from '@/lib/abi/CarNFT';
 
 export function MyCars() {
   const { address } = useAccount();
 
   const { data: balance } = useReadContract({
     address: CAR_NFT_ADDRESS,
-    abi: CarNFTABI,
+    abi: carNFTABI,
     functionName: 'balanceOf',
     args: [address],
   });
 
   const { data: tokens } = useReadContract({
     address: CAR_NFT_ADDRESS,
-    abi: CarNFTABI,
+    abi: carNFTABI,
     functionName: 'tokensOfOwner',
     args: [address],
     query: {
-      enabled: !!address && !!balance && balance > 0,
+      enabled: !!address && !!balance && (balance as bigint) > 0n,
     },
   });
 

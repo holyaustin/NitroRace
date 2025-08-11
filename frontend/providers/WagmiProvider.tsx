@@ -3,7 +3,7 @@
 
 import { PropsWithChildren } from 'react';
 import { WagmiProvider } from 'wagmi';
-import { config } from '@/lib/wagmiConfig';
+import { config } from '../lib/wagmiConfig';
 
 export function WagmiProviderWrapper({ children }: PropsWithChildren) {
   return (
