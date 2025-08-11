@@ -1,20 +1,21 @@
 // src/lib/wagmiConfig.ts
-import { createConfig, http } from 'wagmi'
-import { somnia } from 'wagmi/chains'
-import { injected } from 'wagmi/connectors'
+import { createConfig, http } from 'wagmi';
+import { injected } from 'wagmi/connectors';
 
-// Extend wagmi chains with Somnia
+// Define Somnia Testnet manually
 export const somniaChain = {
   id: 65010,
   name: 'Somnia Testnet',
   network: 'somnia-testnet',
   nativeCurrency: {
-    decimals: 18,
     name: 'SOMN',
     symbol: 'SOMN',
+    decimals: 18,
   },
   rpcUrls: {
-    default: { http: ['https://somnia-testnet-rpc.dora.so'] },
+    default: {
+      http: ['https://somnia-testnet-rpc.dora.so'], // ✅ Official RPC
+    },
   },
   blockExplorers: {
     default: {
